@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf6f0;
+    color: #514238;
+    line-height: 1.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #fffdf9;
+}
+
+nav h2 {
+    color: #8a6651;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #514238;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b18468;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #eee2d5;
+}
+
+.welcome {
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #9a7056;
+}
+
+.hero h3 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #85634e;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #614735;
+}
+
+section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #8a6651;
+    margin-bottom: 30px;
+}
+
+.content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fffdf9;
+    padding: 30px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #8a6651;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #eee2d5;
+    color: #514238;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
